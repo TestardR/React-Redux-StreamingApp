@@ -9,6 +9,11 @@
       "title": "This is another stream",
       "description": "Another one ! I told you",
       "id": 2
+    },
+    {
+      "title": "CreateStream",
+      "description": "Indeed ! ",
+      "id": 3
     }
   ]
 }

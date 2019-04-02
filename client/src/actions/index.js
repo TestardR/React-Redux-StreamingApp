@@ -1,4 +1,5 @@
 import streams from '../apis/streams';
+import history from '../history';
 import {
   CREATE_STREAM,
   FETCH_STREAMS,
@@ -11,6 +12,7 @@ export const createStream = formValues => async dispatch => {
   //   console.log(response);
 
   dispatch({ type: CREATE_STREAM, payload: response.data });
+  history.push('/');
 };
 
 export const fetchStreams = () => async dispatch => {
@@ -35,4 +37,5 @@ export const deleteStream = id => async dispatch => {
   await streams.delete(`/streams/${id}`);
 
   dispatch({ type: DELETE_STREAM, payload: id });
+  history.push('/');
 };

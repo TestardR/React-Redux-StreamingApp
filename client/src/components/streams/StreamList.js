@@ -27,7 +27,7 @@ class StreamList extends Component {
   }
 
   render() {
-    console.log(this.props.streams);
+    // console.log(this.props.streams);
     return (
       <React.Fragment>
         <h2>Streams</h2>
