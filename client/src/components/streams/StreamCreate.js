@@ -18,6 +18,7 @@ class StreamCreate extends Component {
     );
   }
 }
+
 export default connect(
   null,
   { createStream }
