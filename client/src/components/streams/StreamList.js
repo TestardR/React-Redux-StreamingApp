@@ -11,10 +11,14 @@ class StreamList extends Component {
     return this.props.streams.map(stream => {
       return (
         <div className="item" key={stream.id}>
+          <div className="right floated content">
+            <button className="ui button primary">EDIT</button>
+            <button className="ui button negative">DELETE</button>
+          </div>
           <i className="large middle aligned icon camera" />
           <div className="content">
             {stream.title}
-            <div className="description">{stream.description}</div>
+            <div className="description">{stream.description} </div>
           </div>
         </div>
       );
