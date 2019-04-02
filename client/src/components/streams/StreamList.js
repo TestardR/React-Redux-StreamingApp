@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchStreams } from '../../actions';
 
 class StreamList extends Component {
@@ -31,6 +32,11 @@ class StreamList extends Component {
       <React.Fragment>
         <h2>Streams</h2>
         <div className="ui celled list">{this.renderList()}</div>
+        <div style={{ textAlign: 'right' }}>
+          <Link to="/Streams/new" className="ui button primary">
+            Create Stream
+          </Link>
+        </div>
       </React.Fragment>
     );
   }
