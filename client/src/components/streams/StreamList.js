@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchStreams } from '../../actions';
+import { fetchStreams, deleteStream } from '../../actions';
 
 class StreamList extends Component {
   componentDidMount() {
@@ -19,7 +19,12 @@ class StreamList extends Component {
             >
               EDIT
             </Link>
-            <button className="ui button negative">DELETE</button>
+            <button
+              onClick={() => this.props.deleteStream(stream.id)}
+              className="ui button negative"
+            >
+              DELETE
+            </button>
           </div>
           <i className="large middle aligned icon camera" />
           <div className="content">
@@ -53,5 +58,5 @@ const mapStateToPros = state => {
 
 export default connect(
   mapStateToPros,
-  { fetchStreams }
+  { fetchStreams, deleteStream }
 )(StreamList);

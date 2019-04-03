@@ -1,11 +1,6 @@
 {
   "streams": [
     {
-      "title": "This is my stream",
-      "description": "Here it comes !",
-      "id": 1
-    },
-    {
       "title": "This is another stream",
       "description": "Another one ! I told you",
       "id": 2
@@ -16,8 +11,8 @@
       "id": 3
     },
     {
-      "title": "Checking refactoring",
-      "description": "ohh yeahh",
+      "title": "Banana Joe !",
+      "description": "banana !!!!",
       "id": 4
     }
   ]
